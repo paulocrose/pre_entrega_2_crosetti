@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speak Up</title>
+    <!-- CSS BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body>
+    <Nav class="navbar navbar-expand-lg encabezado sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="logo" src="../assets/img/logospeakup.png" alt="Logo de Speak Up">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto menuNav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="clasesregulares.html">Clases Regulares</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page">Cursos Online</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="serviciosdetraduccion.html">Servicios de Traducción</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </Nav>
+
+    <header class="container-fluid banner bannerOl">
+        <img class="imgBannerOl" src="../assets/img/cursos_ol/bannerOl.png" alt="Alumna sentada con una notebook abierta.">
+        <div class="textoBanner">
+            <h1>Cursos online</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, obcaecati!</p>
+        </div>
+    </header>
+
+    <main>
+        <h2>Conocé nuestros cursos online</h2>
+        <div class="container">
+            <div class="row">
+                <div class="card col-xl-4 col-sm-12">
+                    <img src="../assets/img/cursos_ol/viajeros.jpg" class="card-img-top"
+                        alt="Docente dictando clases y señalando un globo terráqueo">
+                    <div class="card-body">
+                        <h5 class="card-title">Inglés para viajeros</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+
+                <div class="card col-xl-4 col-sm-12">
+                    <img src="../assets/img/cursos_ol/conversación.jpg" class="card-img-top"
+                        alt="Docente dando clases virtuales frente a una pantalla con 9 alumnos">
+                    <div class="card-body">
+                        <h5 class="card-title">Inglés conversacional</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+
+                <div class="card col-xl-4 col-sm-12">
+                    <img src="../assets/img/cursos_ol/laboral.jpg" class="card-img-top"
+                        alt="Docente frente a su computadora haciendo anotaciones">
+                    <div class="card-body">
+                        <h5 class="card-title">Inglés laboral</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="contacto container">
+        <div class="textoContacto">
+            <h2> Contactanos </h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam maxime numquam earum, delectus tenetur
+                error dolor recusandae aspernatur cumque eos ipsum inventore aperiam, deleniti, fuga nemo aut? Cumque
+                veritatis non consectetur id laboriosam quam, inventore at. Voluptatum, culpa. Deleniti, fuga?
+                Praesentium optio eum explicabo? Illum deserunt a corporis rerum quae..</p>
+
+        </div>
+
+        <form>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre">
+            </div>
+            <div class="mb-3">
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="apellido">
+            </div>
+            <div class="mb-3">
+                <label for="mail" class="form-label">Mail</label>
+                <input type="email" class="form-control" id="mail">
+            </div>
+            <div class="mb-3">
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input type="text" class="form-control" id="telefono">
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mendaje</label>
+                <textarea name="" id="mensaje" cols="30" rows="10" placeholder="Dejanos tu consulta"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+    <div class="misDatos">
+        <div class="textoMisDatos">
+            <h4> Nuestra ubicación </h4>
+        </div>
+
+        <div class="map-responsive">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6695.094983317131!2d-61.547925052288626!3d-32.96295450869163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1697805420212!5m2!1ses!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-decoration-none lh-1">
+                <img class="logo" src="../assets/img/logospeakup.png" alt="Logo de Speak Up">
+            </a>
+            <span class="mb-3 mb-md-0 textoFooter">© 2023 Company, Inc</span>
+        </div>
+        <a href="https://www.instagram.com/speakupingles/" target="_blank"><i class="bi bi-instagram"></i></a>
+    </footer>
+
+    <!-- JS BS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

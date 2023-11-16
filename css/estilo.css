@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Comfortaa', sans-serif;
+}
+
+h2 {
+    font-weight: 700;
+    text-align: left;
+    margin: 60px 0px 40px 20px;
+}
+
+/* ENCABEZADO */
+
+.logo {
+    width: 150px;
+}
+
+.encabezado {
+    background-color: #24a09d;
+    padding: 0;
+}
+
+.menuNav a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: aliceblue;
+    margin: 10px;
+}
+
+.menuNav a:hover {
+    border-bottom: 3px solid aliceblue;
+}
+
+.active {
+    border-bottom: 3px solid aliceblue;
+}
+
+/* BANNER */
+
+.banner {
+    background-color: cornflowerblue;
+    height: 500px;
+    margin-top: 1rem;
+    padding: 80px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.bannerReg {
+    background-color: green;
+}
+
+.bannerOl {
+    background-color: hotpink;
+}
+
+.bannerTrad {
+    background-color: rgb(255, 196, 0);
+}
+
+.bannerContac {
+    background-color: blueviolet;
+}
+
+.banner img {
+    width: 500px;
+    height: 500px;
+}
+
+.textoBanner {
+    width: 80%;
+}
+
+.textoBanner h1 {
+    font-size: 3.3rem;
+    font-weight: 1000;
+    margin-bottom: 12px;
+    color: aliceblue;
+}
+
+.textoBanner p {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    color: aliceblue;
+}
+
+button {
+    padding: 1em 2.1em 1.1em;
+    margin: 8px;
+    background-color: aliceblue;
+    color: #24a09d;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 800;
+    font-size: 0.85em;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+}
+
+button:hover {
+    background-color: #24a09d;
+    color: aliceblue;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width:884px) {
+    .banner {
+        margin-top: 10px;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .textoBanner {
+        width: 100%;
+        text-align: center;
+    }
+
+    .textoBanner h1 {
+        font-size: 3rem;
+    }
+
+    .banner img {
+        width: 70%;
+        height: 70%;
+    }
+}
+
+@media (max-width:678px) {
+    .textoBanner h1 {
+        font-size: 2rem;
+    }
+}
+
+/* FEATURES*/
+
+
+.feature-icon {
+    background-color: #24a09d;
+    width: 45px;
+    border-radius: 5px;
+}
+
+.bi {
+    color: aliceblue;
+}
+
+/* CARDS */
+
+.card {
+    padding: 10px;
+    border: 2px solid #24a09d;
+}
+
+.btn-primary {
+    background-color: #24a09d;
+    border: 0px;
+}
+
+.btn-primary:hover {
+    background-color: aliceblue;
+    border: 2px solid #24a09d;
+    color: #24a09d;
+}
+
+.card-title {
+    font-weight: 700;
+}
+
+.card-text p {
+    font-size: 14px;
+}
+
+/* FORMULARIO */
+
+.contacto {
+    margin-top: 3rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.contacto h2 {
+    margin: 0 0 20px 0;
+}
+
+.textoContacto {
+    width: 500px;
+}
+
+form {
+    margin-right: 20px;
+    width: 600px;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-bottom: 80px;
+    color: #333;
+    justify-content: space-around;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #24a09d;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.btnFormularioEnviar {
+    background-color: #24a09d;
+    color: #fff;
+    padding: 10px 20px;
+    border: 2px solid #24a09d;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btnFormularioRestablecer {
+    background-color: #fff;
+    color: #24a09d;
+    padding: 10px 20px;
+    border: 2px solid #24a09d;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+@media (max-width:884px) {
+    form {
+        width: auto;
+    }
+    .contacto {
+        flex-flow: column;
+        align-items: center;
+    }
+    .textoContacto {
+        width: auto;
+    }
+}
+
+
+/* MAPA */
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 350px;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #24a09d;
+    padding: 40px;
+    text-align: auto;
+    margin-top: 1rem;
+}
+
+.textoFooter {
+    color: aliceblue;
+    font-weight: 400;
+}
